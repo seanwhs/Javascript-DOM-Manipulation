@@ -958,9 +958,9 @@ from first principles.
 ---
 # Reference Tutorial
 
-Reference this public repository for examples and demos:
+Reference this tutorial for more information:
 
-Javascript-DOM-Manipulation Repository
+https://github.com/seanwhs/Tutorials/blob/main/react/JS-DOM-Manipulation.md
 ---
 
 # 🔖 GitHub Topics
