@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Demo</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background: #f4f4f9; }
+        .container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        ul { list-style: none; padding: 0; }
+        li { padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        li:last-child { border-bottom: none; }
+        .highlight { background-color: #fff3cd; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 id="menu-title">Inventory List</h2>
+        <ul id="product-list">
+            <li>Apples <span>$1.99</span></li>
+            <li class="target-item">Bananas <span>$0.99</span></li>
+            <li>Cherries <span>$2.99</span></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

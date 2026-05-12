@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #e9ecef;
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+      }
+      .todo-card {
+        background: white;
+        width: 400px;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      form {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      input {
+        flex: 1;
+        padding: 10px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        outline: none;
+      }
+      input:focus {
+        border-color: #007bff;
+      }
+      button#add-btn {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+        transition: background 0.2s;
+      }
+      li.completed span {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .delete-btn {
+        background: #ff4757;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+      .edit-btn {
+        background: #f1c40f;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 0.8rem;
+        margin-right: 5px;
+      }
+      .edit-btn:hover {
+        background: #d4ac0d;
+      }
+      .delete-btn:hover {
+        background: #ff1f33;
+      }
+
+      span {
+        flex: 1;
+        cursor: pointer;
+      } /* Ensures clicking text is easy */
+
+    </style>
+  </head>
+  <body>
+    <div class="todo-card">
+      <h2>My Tasks</h2>
+      <form id="todo-form">
+        <input
+          type="text"
+          id="todo-input"
+          placeholder="What needs to be done?"
+          required
+        />
+        <button type="submit" id="add-btn">Add</button>
+      </form>
+      <ul id="todo-list">
+        <!-- Tasks injected here -->
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

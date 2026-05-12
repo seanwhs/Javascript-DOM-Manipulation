@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 05: Shopping Cart</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: system-ui, sans-serif; background: #f4f7f6; display: flex; gap: 20px; padding: 40px; }
+        
+        .container { display: grid; grid-template-columns: 1fr 350px; gap: 20px; width: 100%; max-width: 1000px; margin: auto; }
+        
+        /* Product Grid */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+        .product-card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        
+        /* Cart Sidebar */
+        .cart-sidebar { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: fit-content; }
+        .cart-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #eee; font-size: 0.9rem; }
+        
+        .totals { margin-top: 20px; border-top: 2px solid #333; padding-top: 10px; }
+        .total-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+        .grand-total { font-weight: bold; font-size: 1.2rem; color: #27ae60; }
+
+        button { cursor: pointer; border: none; border-radius: 4px; padding: 8px 12px; transition: 0.2s; }
+        .add-btn { background: #007bff; color: white; width: 100%; margin-top: 10px; }
+        .add-btn:hover { background: #0056b3; }
+        .remove-btn { background: #ff4757; color: white; padding: 2px 8px; font-size: 0.7rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Products Section -->
+        <div class="products-grid" id="products-grid">
+            <!-- JS Inject: Products -->
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart-sidebar">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <!-- JS Inject: Cart Items -->
+            </div>
+            
+            <div class="totals">
+                <div class="total-row"><span>Subtotal:</span> <span id="subtotal">$0.00</span></div>
+                <div class="total-row"><span>Tax (10%):</span> <span id="tax">$0.00</span></div>
+                <div class="total-row grand-total"><span>Total:</span> <span id="total">$0.00</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

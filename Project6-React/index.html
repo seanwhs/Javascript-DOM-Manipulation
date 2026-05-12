@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 06: Thinking in React</title>
+    <!-- 1. Load React and Babel (Compiler) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; padding-top: 50px; background: #f0f2f5; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; }
+        button { padding: 10px 20px; cursor: pointer; border: none; border-radius: 6px; background: #007bff; color: white; }
+        .message { margin-top: 20px; font-size: 1.5rem; color: #2d3436; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <!-- The only HTML you need. React "injects" the UI here. -->
+    <div id="root"></div>
+
+    <!-- 2. Type="text/babel" tells Babel to compile this script -->
+    <script type="text/babel" src="script.jsx"></script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Rendering Lab</title>
+    <style>
+        body { font-family: sans-serif; padding: 40px; background: #f0f4f8; }
+        .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 320px; }
+        h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #333; }
+        ul { list-style: none; padding: 0; }
+        li { 
+            background: #fff; 
+            margin: 8px 0; 
+            padding: 12px; 
+            border-radius: 6px; 
+            border: 1px solid #e1e8ed;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        li::before { content: "🛒"; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>Shopping List</h2>
+        <ul id="fruit-list">
+            <!-- Data will be injected here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

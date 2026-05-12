@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Content Practice</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; background: #f4f7f6; }
+        .card { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); max-width: 500px; margin: auto; }
+        h1 { color: #333; transition: all 0.3s; }
+        .output-box { border: 2px dashed #cbd5e0; padding: 15px; margin-top: 20px; min-height: 50px; border-radius: 8px; }
+        span { color: #3182ce; font-weight: bold; text-decoration: underline; }
+        code { background: #edf2f7; padding: 2px 4px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="title">Original Title</h1>
+        <p>Current Title Value: <code id="debug"></code></p>
+        
+        <div class="output-box" id="display-area">
+            Content will change here...
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

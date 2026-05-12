@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList State Management</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding-top: 50px; transition: background 0.3s; }
+        
+        /* Base Component */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #eee;
+            border: 2px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            margin-bottom: 20px;
+        }
+
+        /* State: Active */
+        .box.active {
+            background-color: #4CAF50;
+            color: white;
+            transform: scale(1.1);
+            border-color: #2E7D32;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* State: Dark Mode (applied to body) */
+        body.dark {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+        body.dark .box {
+            background-color: #333;
+            border-color: #555;
+        }
+
+        /* State: Hidden */
+        .hidden {
+            display: none;
+        }
+
+        button { padding: 10px 20px; cursor: pointer; margin: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="box">Interact with me!</div>
+    
+    <div class="controls">
+        <button id="toggle-active">Toggle Active State</button>
+        <button id="toggle-dark">Toggle Dark Mode</button>
+        <button id="hide-box">Hide/Show Box</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

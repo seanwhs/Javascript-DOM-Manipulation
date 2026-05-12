@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Events: Live Preview</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; padding: 50px; background: #f4f7f6; }
+        .card { background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); text-align: center; width: 300px; margin-bottom: 20px; transition: border-top 0.3s; border-top: 10px solid #333; }
+        h2 { margin: 10px 0; color: #333; }
+        .controls { display: flex; flex-direction: column; gap: 15px; width: 300px; }
+        input { padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+        label { font-size: 0.8rem; font-weight: bold; color: #666; margin-bottom: -10px; }
+    </style>
+</head>
+<body>
+
+    <div class="card" id="profile-card">
+        <h2 id="name-display">Your Name</h2>
+        <p>Live Profile Preview</p>
+    </div>
+
+    <div class="controls">
+        <label>TYPE NAME</label>
+        <input type="text" id="name-input" placeholder="Start typing...">
+        
+        <label>CHOOSE THEME COLOR</label>
+        <input type="color" id="color-input">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

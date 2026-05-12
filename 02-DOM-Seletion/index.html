@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection Practice</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .container { border: 2px solid #ddd; padding: 15px; border-radius: 8px; }
+        .highlight { background-color: #fff3cd; font-weight: bold; }
+        .box { display: inline-block; width: 50px; height: 50px; margin: 5px; background: #e2e2e2; border: 1px solid #999; }
+        button { margin-top: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Selection Practice</h1>
+
+    <div class="container">
+        <!-- 1. ID selection -->
+        <h2 id="main-title">The Master Heading</h2>
+
+        <!-- 2. Paragraph and Class selection -->
+        <p class="description">This is a paragraph with a class.</p>
+        <p class="description highlight">This is another paragraph with two classes.</p>
+        <p>This is a plain paragraph with no class.</p>
+
+        <!-- 3. Multiple elements -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+
+        <!-- 4. Button selection -->
+        <br>
+        <button id="action-btn">Click Me</button>
+        <button class="secondary-btn">Secondary Action</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
