@@ -956,6 +956,12 @@ Core frontend engineering principles
 from first principles.
 
 ---
+# Reference Tutorial
+
+Reference this public repository for examples and demos:
+
+Javascript-DOM-Manipulation Repository
+---
 
 # 🔖 GitHub Topics
 
